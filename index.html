@@ -7,51 +7,62 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      background-color: #f0f8ff;
-      color: #000000;
-      font-family: sans-serif;
+      background-color: #e0e7ff; /* เปลี่ยนสีพื้นหลังให้คล้ายลายแบบก่อสร้าง */
+      color: #222222;
+      font-family: 'Prompt', sans-serif;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #ffffff;
+      background: linear-gradient(to bottom, #ffffff, #f0f4ff);
       text-align: center;
       padding: 20px;
-      border-bottom: 3px solid #007BFF;
+      border-bottom: 4px solid #1e40af;
       position: relative;
     }
     header h1 {
-      color: #444444;
+      color: #1e3a8a;
     }
     .plumb-bob {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 100px;
+      bottom: -10px;
+      right: 20px;
+      width: 80px;
       height: auto;
     }
     nav {
-      background-color: #007BFF;
-      padding: 10px;
+      background-color: #1e40af;
+      padding: 12px;
       text-align: center;
     }
     nav a {
       color: #ffffff;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 20px;
+      padding: 40px 20px;
       background-color: #ffffff;
-      margin: 10px;
-      border-radius: 8px;
+      margin: 20px;
+      border-radius: 12px;
+      border-left: 6px solid #1e40af; 
+      position: relative;
+    }
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background-color: #1e40af;
     }
     footer {
-      background-color: #007BFF;
+      background-color: #1e40af;
       color: #ffffff;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 20px;
     }
     .projects img {
@@ -62,19 +73,16 @@
     .projects {
       margin-bottom: 20px;
     }
-    .phone {
-      color: red;
-      font-weight: bold;
-    }
+    .phone,
     .email {
-      color: red;
+      color: #dc2626;
       font-weight: bold;
     }
     .call-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: red;
+      background-color: #dc2626;
       color: #ffffff;
       padding: 10px 15px;
       border-radius: 50px;
@@ -190,6 +198,7 @@
   <a href="tel:0894768888" class="call-button">📞 โทรหาเรา</a>
 </body>
 </html>
+
 
 
 
